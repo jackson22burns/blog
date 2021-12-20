@@ -4,45 +4,99 @@
         rel="stylesheet" 
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
         crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<title>First Blog Post</title>
+<title>Jackson's Blog</title>
 
 <body>
-<img src="img_la.jpg" alt="LA" style="width:100%">
-
-<div class="first">
- <h1>Getting Started</h1>
- <p>
-     While I've learned that simple html and css suffice to create basic web pages. I became curious whether there are any additional resources for already-developed elements of websites. While researching some industry standards and resources that are most widely used within UX, I came across bootstrap and material UI. 
-</p>
- <p>
-     The biggest difference between these resources is that Material UI is used in conjunction with react (which has also become industry standard), while bootstrap can be used with just html. However both these two giants in the web development industry help developers design better websites with great UI, excellent user experience, and responsive designs. They do this by offering previously styled web elements and classes for the developer to make use of. 
-</p>
-
-<h3>Sources</h3>
-    <a class="btn btn-primary" href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" role="button">Bootstrap</a>
-    <a class="btn btn-primary" href="https://material-ui.com/getting-started/usage/" role="button">MaterialUI</a>
-    <a class="btn btn-primary" href="https://uxplanet.org/material-ui-vs-bootstrap-a-detailed-comparison-8fc9151db5ed" role="button">Comparing the Two</a>
-</div>
-
-
-<div class="infoBox">
-    <center><h1>Who are the Harrisonburg Cyclists?</h1></center>
-    </br>
-    <div class="info">
-        <h4>
-            The Harrisonburg Cyclists are a cohort of riders, who all vary in skill, endurance, and experience. 
-            Whether you enjoy mountain biking or road riding - In the Shenendoah Valley, there are endless places to go!
-        </h4>
-        </br>
-        <h4>
-            Feel free to check out some of our weekly group rides, local races, and places to around 
-            the area to bike. If you are interested in being added to our email chain please fill out the form under 
-            the <strong>Contact</strong> tab!
-        </h4>
+    <center><h1>Jackson's Blog</h1></center>
+    <br/>
+    <div class="nav">
+        <ul>
+            <li><a href="#blog1">Material UI & Bootstrap</a></li>
+            <li><a href="#blog2">File Uploads</a></li>
+            <li><a href="#blog3">WebDev Course Review</a></li>
+        </ul>
     </div>
-</div>
+    <hr>
+    <div class="infoBox1" id="blog1">
+        <center><h1>Material UI & Bootstrap</h1></center>
+        </br>
+        <div class="info" >
+            <h4>
+                While I've learned that simple html and css suffice to create basic web pages. I became curious whether there are any additional resources 
+                for already-developed elements of websites. While researching some industry standards and resources that are most widely used within UX, 
+                I came across bootstrap and material UI. 
+            </h4>
+            </br>
+            <h4>
+                The biggest difference between these resources is that Material UI is used in conjunction with react (which has also become industry standard), 
+                while bootstrap can be used with just html. However both these two giants in the web development industry help developers design better websites 
+                with great UI, excellent user experience, and responsive designs. They do this by offering previously styled web elements and classes for the developer 
+                to make use of. 
 
+            </h4>
+        </div>
+        <br/>
+        <div class="info">
+            <center><h3>Sources</h3></center>
+            <div class="buttons">
+                <a class="btn btn-warning" href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" role="button">Bootstrap</a>
+                <a class="btn btn-warning" href="https://material-ui.com/getting-started/usage/" role="button">MaterialUI</a>
+                <a class="btn btn-warning" href="https://uxplanet.org/material-ui-vs-bootstrap-a-detailed-comparison-8fc9151db5ed" role="button">Comparing the Two</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="infoBox2" id="blog2">
+        <center><h1>File Uploads</h1></center>
+        </br>
+        <div class="info" >
+            <h4>
+                Many web applications allow users to upload files, usually tied to some sort of account. I decided to explore one option of how this can be accomplished 
+                by creating a simple client/server project that stores files locally (in a folder) using multer. Multer is a node.js middleware primarily used for uploading files.
+            </h4>
+            <center><img src="images/multerBack1.png" alt="backend multer"/></center>
+            <h4>
+                Setting up multer on the backend, you first tell it the destination, where you want it stored and a file name for each upload.
+            </h4>
+            <center><img src="images/multerBack2.png" alt="backend multer2" width="730"/></center>
+            <h4>
+                Since most applications will store files associated to its users, the above code is what an endpoint would look like if you were to store the 
+                path to the file from "/uploads" with the users primary key. This design is probably not optimal for an actual service, you would instead want 
+                to you some database that can store files or S3, but it will work for demonstrating multer. On to the front end...
+            </h4>
+            <center><img src="images/multerFront2.png" alt="backend multer2" width="730"/></center>
+            <br/>
+            <center><img src="images/multerFront.png" alt="backend multer2" width="730"/></center>
+            <h4>
+                when a file is uplaoded, the event handler sends the file data to the backend post endpoint as the same data type that multer can use.
+            </h4>
+        </div>
+        <br/>
+    </div>
+    <hr>
+    <div class="infoBox3" id="blog3">
+        <center><h1>WebDev Course Review</h1></center>
+        </br>
+        <div class="info" >
+            <h4>
+                This semester I feel I've gained a much deeper understanding of web development and what it means to be a full stack developer. 
+                However, I do think there were times where I could have gotten more out of the course. The readings provided each week were very 
+                insightful and helpful for the labs done in class, when I read them. To be completely honest, since I was taking 4 CS classes which all 
+                had some form of assesment from the readings, often times my WebDev readings had the lowest priority on my list of things to complete and wouldnt getting done. 
+                Im not sure if making reading quizzes is the route to go here since the chapters really arent super long, this is something i noticed. I dont know if others experienced this, 
+                perhaps this point has more to do with me than the course.
+            </h4>
+            </br>
+            <h4>
+                I think the best thing to take away from this course and what makes students more marketable is a deeper understanding of React, since this is used heavily in industry. 
+                Now that there is a prereq for this course, I think this will help my point here and maybe the second year course should be centered around react. I felt that since we were introduced to React in the later half of the semester with less time, 
+                our goal was to get functionality of our projects working with react, as opposed to truly understanding whats going on under the hood.
+            </h4>
+        </div>
+        <br/>
+
+    </div>
 </body>
 </html>

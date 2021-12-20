@@ -1,14 +1,65 @@
-.infoBox{
+.infoBox1{
     margin: auto;
     width: 90%;
     border: 3px solid #000000;
+    border-style: outset;
     padding: 20px;
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: rgba(0, 123, 255, 0.398);
+}.infoBox2{
+    margin: auto;
+    width: 90%;
+    border: 3px solid #000000;
+    border-style: outset;
+    padding: 20px;
+    background-color: rgba(251, 255, 0, 0.398);
+}
+.infoBox3{
+    margin: auto;
+    width: 90%;
+    border: 3px solid #000000;
+    border-style: outset;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.398);
 }
 .info{
     margin: auto;
-    width: 80%;
+    width: 90%;
     border: 3px solid #000000;
+    border-style: outset;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255);
 }
+.buttons{
+    text-align: center;
+}
+.nav {
+    margin: auto;
+    width: 20%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid rgb(0, 60, 255);
+  }
+li {
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 60, 255);
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
+li a:hover {
+    background-color: rgb(0, 60, 255);
+    color: white;
+}
+li:last-child {
+    border-bottom: none;
+  }
+  
